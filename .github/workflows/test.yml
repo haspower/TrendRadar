@@ -1,0 +1,9 @@
+name: Hello World Test
+on: [workflow_dispatch] # 仅支持手动触发
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Say Hello
+        run: echo "Hello World, the runner is alive!"
